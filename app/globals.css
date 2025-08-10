@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@tailwind utilities;
+
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+}
+
+body {
+  font-family: var(--font-poppins);
+}
+
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #222; /* Dark track color, matching the site's dark tones */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c08b5c; /* The warm ochre/gold accent color */
+  border-radius: 20px;       /* Gives it soft, rounded corners */
+  border: 2px solid #222;    /* Creates a small border to match the track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d49a6a; /* A slightly lighter shade on hover for feedback */
+}
+
+body {
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: #c08b5c #222;   /* thumb and track color */
+}
